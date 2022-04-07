@@ -1,0 +1,6 @@
+cd /path/to/directory
+git clone git@github.com:logsol/Github-Auto-Deploy.git
+cd Github-Auto-Deploy
+cd /path/to/directory/Github-Auto-Deploy
+nohup python -u GitAutoDeploy.py  --daemon-mode --quiet &
+tail -f nohup.out  # kiểm tra log
